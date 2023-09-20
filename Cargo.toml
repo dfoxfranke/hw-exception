@@ -1,0 +1,15 @@
+[package]
+name = "hw-exception"
+version = "0.1.0"
+authors = ["Daniel Fox Franke <dfoxfranke@gmail.com>"]
+edition = "2021"
+description = "Catch and handle hardware exceptions, such as page faults"
+license = "Apache-2.0 WITH LLVM-exception"
+keywords = ["pagefault", "sigsegv", "segfault", "exception", "fault"]
+categories = ["os::unix-apis", "hardware-support"]
+
+[dependencies]
+libc = { version = "0.2", features = ["extra_traits"] }
+
+[build-dependencies]
+cc = "1.0"
