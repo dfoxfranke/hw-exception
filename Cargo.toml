@@ -7,6 +7,7 @@ description = "Catch and handle hardware exceptions, such as page faults"
 license = "Apache-2.0 WITH LLVM-exception"
 keywords = ["pagefault", "sigsegv", "segfault", "exception", "fault"]
 categories = ["os::unix-apis", "hardware-support"]
+repository = "https://github.com/dfoxfranke/hw-exception"
 
 [dependencies]
 libc = { version = "0.2", features = ["extra_traits"] }
