@@ -262,7 +262,7 @@ short hwexception_get_addr_lsb(siginfo_t const* in) {
     return in->si_addr_lsb;
 #else
     (void)in;
-    abort()
+    abort();
 #endif
 }
 
@@ -271,7 +271,7 @@ void* hwexception_get_lower(siginfo_t const* in) {
     return in->si_lower;
 #else
     (void)in;
-    abort()
+    abort();
 #endif
 }
 
@@ -280,7 +280,7 @@ void* hwexception_get_upper(siginfo_t const* in) {
     return in->si_upper;
 #else
     (void)in;
-    abort()
+    abort();
 #endif
 }
 
@@ -289,6 +289,6 @@ int hwexception_get_pkey(siginfo_t const* in) {
     return in->si_pkey;
 #else
     (void)in;
-    abort()
+    abort();
 #endif
 }
